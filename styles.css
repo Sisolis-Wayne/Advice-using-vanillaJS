@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --clr-l-cyan: hsl(193, 38%, 86%);
+  --clr-Neon-Green: hsl(150, 100%, 66%);
+  --clr-grayish-blue: hsl(217, 19%, 38%);
+  --clr-d-grayish-blue: hsl(217, 19%, 24%);
+  --clr-d-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--clr-d-blue);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.5rem;
+}
+
+#card-container {
+  background-color: var(--clr-d-grayish-blue);
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#card-heading {
+  color: var(--clr-Neon-Green);
+  font-size: 0.5rem;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  margin-block: 1.1rem;
+}
+
+#card-content {
+  color: var(--clr-l-cyan);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#dice-container {
+  background-color: var(--clr-Neon-Green);
+  display: grid;
+  place-content: center;
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 557px) {
+  #slider {
+    content: url(./images/pattern-divider-desktop.svg);
+  }
+}
